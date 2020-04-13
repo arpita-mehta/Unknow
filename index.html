@@ -1,0 +1,288 @@
+<!DOCTYp html>
+<html>
+  <head>
+ <meta name="viewport" content ="width = device-width, initial-scale =1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+#background {
+    background-color:#000000;
+    height: 900px; 
+    width: 100%; 
+}
+.mySlides {
+background-image: url("backk.png");
+    height: 700px;
+    display:none;
+    margin: auto;
+    padding: 40px;
+    padding-right: 600px;
+    padding-left: 600px;
+}
+   
+#blank {
+
+
+    background-color:#000000;
+    height: 970px; 
+    width: 100%; 
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(117, 114, 113, 0.8) 10%, rgba(40, 49, 77, 0.8) 30%, rgba(29, 35, 71, 0.8) 50%, rgba(19, 25, 28, 0.8) 80%, rgba(15, 14, 14, .8) 100%), url(https://38.media.tumblr.com/tumblr_m00c3czJkM1qbukryo1_500.gif);
+  background-repat: no-repat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hearts {
+  position:fixed;
+  top:0;left:0;
+  height:100vh;
+  width:100vw;
+  z-index:99999999999;
+  pointer-events:none;}
+.heart {
+  color:darkred;
+  font-size: 50px;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+@-webkit-keyframes hearts-fall{
+  0%{top:-10%}
+  100%{top:100%}
+}
+@-webkit-keyframes hearts-shake{
+  0%{
+    -webkit-transform:translateX(0px);
+    transform:translateX(0px)
+  }
+  50%{
+    -webkit-transform:translateX(80px);
+    transform:translateX(80px)
+  }
+  100%{
+    -webkit-transform:translateX(0px);
+    transform:translateX(0px)
+  }
+}
+
+@keyframes hearts-fall{
+  0%{top:-10%}
+  100%{top:100%}
+}
+@keyframes hearts-shake{
+  0%{transform:translateX(0px)}
+  50%{transform:translateX(80px)}
+  100%{transform:translateX(0px)}
+}
+
+.heart{
+  position:fixed;
+  top:-10%;
+  z-index:9999;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+  -webkit-animation-name:hearts-fall,heart-shake;
+  -webkit-animation-duration:10s,3s;
+  -webkit-animation-timing-function:linear,ease-in-out;
+  -webkit-animation-iteration-count:infinite,infinite;
+  -webkit-animation-play-state:running,running;
+  animation-name:hearts-fall,hearts-shake;
+  animation-duration:10s,3s;
+  animation-timing-function:linear,ease-in-out;
+  animation-iteration-count:infinite,infinite;
+  animation-play-state:running,running
+}
+.heart:nth-of-type(0){
+  left:1%;
+  -webkit-animation-delay:0s,0s;
+  animation-delay:0s,0s}
+.heart:nth-of-type(1){
+  left:10%;
+  -webkit-animation-delay:1s,1s;
+  animation-delay:1s,1s}
+.heart:nth-of-type(2){
+  left:20%;
+  -webkit-animation-delay:6s,.5s;
+  animation-delay:6s,.5s}
+.heart:nth-of-type(3){
+  left:30%;
+  -webkit-animation-delay:4s,2s;
+  animation-delay:4s,2s}
+.heart:nth-of-type(4){
+  left:40%;
+  -webkit-animation-delay:2s,2s;
+  animation-delay:2s,2s}
+.heart:nth-of-type(5){
+  left:50%;
+  -webkit-animation-delay:8s,3s;
+  animation-delay:8s,3s}
+.heart:nth-of-type(6){
+  left:60%;
+  -webkit-animation-delay:6s,2s;
+  animation-delay:6s,2s}
+.heart:nth-of-type(7){
+  left:70%;
+  -webkit-animation-delay:2.5s,1s;
+  animation-delay:2.5s,1s}
+.heart:nth-of-type(8){
+  left:80%;
+  -webkit-animation-delay:1s,0s;
+  animation-delay:1s,0s}
+.heart:nth-of-type(9){
+  left:90%;
+  -webkit-animation-delay:3s,1.5s;
+  animation-delay:3s,1.5s
+}
+</style>
+   </head>
+<body>
+<div class="hearts" aria-hidden="true">
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+  <div class="heart">
+  	&hearts;
+  </div>
+ 
+
+<div id="particles-js">
+<div id="background">
+<div id="blank">
+<div class="row">
+<div class="w3" style="max-width:100%" >
+                <img class="mySlides" src="1.jpeg" height="800">
+                <img class="mySlides" src="2.jpeg" height="800">
+                <img class="mySlides" src="3.jpeg" height="800">
+                <img class="mySlides" src="4.jpeg" height="800">
+                <img class="mySlides" src="5.jpeg" height="800">
+                <img class="mySlides" src="6.jpeg" height="800">
+                <img class="mySlides" src="7.jpeg" height="800">
+                <img class="mySlides" src="8.jpeg" height="800">
+                <img class="mySlides" src="9.jpeg" height="800">
+                <img class="mySlides" src="10.jpeg" height="800">
+                <img class="mySlides" src="11.jpeg" height="800">
+                <img class="mySlides" src="12.png" height="800">
+                <img class="mySlides" src="13.jpeg" height="800">
+                <img class="mySlides" src="14.jpeg" height="800">
+                <img class="mySlides" src="15.jpeg" height="800">
+                <img class="mySlides" src="16.jpeg" height="800">
+                <img class="mySlides" src="17.jpeg" height="800">
+                <img class="mySlides" src="18.png" height="800">
+                <img class="mySlides" src="19.jpeg" height="800">
+                <img class="mySlides" src="20.jpeg" height="800">
+                <img class="mySlides" src="21.jpeg" height="800">
+                <img class="mySlides" src="22.jpeg" height="800">
+                <img class="mySlides" src="23.jpeg" height="800">
+                <img class="mySlides" src="24.jpeg" height="800">
+                <img class="mySlides" src="25.jpeg" height="800">
+                <img class="mySlides" src="26.jpeg" height="800">
+                <img class="mySlides" src="27.jpeg" height="800">
+                <img class="mySlides" src="28.jpeg" height="800">
+                <img class="mySlides" src="29.jpeg" height="800">
+                <img class="mySlides" src="30.jpeg" height="800">
+                <img class="mySlides" src="31.jpeg" height="800">
+                <img class="mySlides" src="32.jpeg" height="800">
+                <img class="mySlides" src="33.jpeg" height="800">
+                <img class="mySlides" src="34.jpeg" height="800">
+                <img class="mySlides" src="35.jpeg" height="800">
+                <img class="mySlides" src="36.jpeg" height="800">
+                <img class="mySlides" src="37.jpeg" height="800">
+                <img class="mySlides" src="38.jpeg" height="800">
+                <img class="mySlides" src="39.jpeg" height="800">
+                <img class="mySlides" src="40.jpeg" height="800">
+                <img class="mySlides" src="41.jpeg" height="800">
+                <img class="mySlides" src="42.jpeg" height="800">
+                <img class="mySlides" src="43.jpeg" height="800">
+                <img class="mySlides" src="44.jpeg" height="800">
+                <img class="mySlides" src="45.jpeg" height="800">
+                <img class="mySlides" src="46.jpeg" height="800">
+                <img class="mySlides" src="47.jpg" height="800">
+                <img class="mySlides" src="48.jpg" height="800">
+                <img class="mySlides" src="49.jpg" height="800">
+                <img class="mySlides" src="50.jpg" height="800">
+                <img class="mySlides" src="51.jpg" height="800">
+                <img class="mySlides" src="52.jpg" height="800">
+                <img class="mySlides" src="53.jpg" height="800">
+                <img class="mySlides" src="54.jpg" height="800">
+                <img class="mySlides" src="55.jpg" height="800">
+                <img class="mySlides" src="56.jpg" height="800">             
+                <img class="mySlides" src="57.jpg" height="800">
+                <img class="mySlides" src="58.jpg" height="800">
+                <img class="mySlides" src="59.jpg" height="800">
+                <img class="mySlides" src="60.jpg" height="800">
+                <img class="mySlides" src="61.jpg" height="800">
+                <img class="mySlides" src="62.jpg" height="800">
+                <img class="mySlides" src="63.jpg" height="800">
+                <img class="mySlides" src="64.jpg" height="800">             
+                <img class="mySlides" src="65.jpg" height="800">
+                <img class="mySlides" src="66.jpg" height="800">
+                <img class="mySlides" src="67.jpg" height="800">
+                <img class="mySlides" src="68.jpeg" height="800">
+                <img class="mySlides" src="69.jpg" height="800">
+                <img class="mySlides" src="70.jpeg" height="800">
+                <img class="mySlides" src="71.jpg" height="800">
+                <img class="mySlides" src="72.jpg" height="800">               
+                <img class="mySlides" src="73.jpg" height="800">
+                <img class="mySlides" src="74.jpeg" height="800">
+
+             
+</div>
+</div>
+
+ 
+</div>
+</div>
+</div>
+</div>
+<p id="demo"></p>
+
+<script>
+var myIndex = 0;
+        carousel();
+       function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+            }
+            myIndex++;
+             if (myIndex > x.length) {myIndex = 1}    
+             x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); 
+            }
+</script> 
+</body>
+</html>
